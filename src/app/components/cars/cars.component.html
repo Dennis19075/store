@@ -1,0 +1,22 @@
+<p-table [value]="cars">
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="id">Id <p-sortIcon field="Id"></p-sortIcon></th>
+            <th pSortableColumn="maker">Maker <p-sortIcon field="Maker"></p-sortIcon></th>
+            <th pSortableColumn="model">Model <p-sortIcon field="Model"></p-sortIcon></th>
+            <th pSortableColumn="color">Color <p-sortIcon field="Color"></p-sortIcon></th>
+            <th pSortableColumn="year">Year <p-sortIcon field="Year"></p-sortIcon></th>
+            <th pSortableColumn="doors">Doors <p-sortIcon field="Doors"></p-sortIcon></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-car>
+        <tr>
+            <td>{{car.id}}</td>
+            <td>{{car.make}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.color}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.doors}}</td>
+        </tr>
+    </ng-template>
+</p-table>
