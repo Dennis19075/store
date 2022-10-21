@@ -1,4 +1,4 @@
-<p-table [value]="cars">
+<p-table [value]="cars" [paginator]="true" [rows]="10" [responsive]="true">
     <ng-template pTemplate="header">
         <tr>
             <th pSortableColumn="id">Id <p-sortIcon field="Id"></p-sortIcon></th>
